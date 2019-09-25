@@ -1,21 +1,36 @@
 #include "calculator.h"
 
-float CCalc::plus(float a, float b)
+float CCalc::plus()
 {
-    return a + b;
+    return m_a + m_b;
 }
 
-float CCalc::minus(float a, float b)
+float CCalc::minus()
 {
-    return a - b;
+    return m_a - m_b;
 }
 
-float CCalc::multiply(float a, float b)
+float CCalc::multiply()
 {
-    return a * b;
+    return m_a * m_b;
 }
 
-float CCalc::divide(float a, float b)
+float CCalc::divide()
 {
-    return a / b;
+    return m_a / m_b;
+}
+
+void CCalc::set(float a, float b)
+{
+    m_a = a; m_b = b;
+}
+
+float CCalc::getA()
+{
+    return m_a;
+}
+
+float CCalc::getB()
+{
+    return m_b;
 }

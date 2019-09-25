@@ -1,17 +1,19 @@
-#ifndef _CALCULATOR_H_
-#define _CALCULATOR_H_
+#ifndef _CALCULATOR_H
+#define _CALCULATOR_H
 
-class CCalc{
-
+class CCalc
+{
 private:
-  float a,b;
+  float m_a, m_b;
 
 public:
-  float plus(float a, float b);
-  float minus(float a, float b);
-  float multiply(float a, float b);
-  float divide(float a, float b);
-
+  float plus();
+  float minus();
+  float multiply();
+  float divide();
+  void set(float a, float b);
+  float getA();
+  float getB();
 };
 
-#endif // _CALCULATOR_H_
+#endif // _CALCULATOR_H
