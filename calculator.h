@@ -14,4 +14,4 @@ public:
 
 };
 
-#endif //_CALCULATOR_H_
+#endif // _CALCULATOR_H_
